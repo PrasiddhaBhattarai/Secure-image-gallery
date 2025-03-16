@@ -1,0 +1,19 @@
+<section class="upload-section">
+    <div class="upload-container">
+        <h2>Upload New Image</h2>
+        <form id="uploadForm" class="upload-form" enctype="multipart/form-data">
+            <div class="form-group">
+                <label for="image">Select Image</label>
+                <input type="file" id="image" name="image" accept="image/*" required>
+                <div id="imagePreview" class="image-preview"></div>
+            </div>
+            <div class="form-group">
+                <button type="submit" class="btn btn-primary">Upload Image</button>
+            </div>
+            <div id="uploadMessage" class="message"></div>
+        </form>
+        <div class="upload-links">
+            <p><a href="/admin">Back to Admin Dashboard</a></p>
+        </div>
+    </div>
+</section> 

@@ -1,0 +1,27 @@
+{
+  "name": "nodejs_auth",
+  "version": "1.0.0",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "server.js",
+    "dev": "nodemon server.js"
+  },
+  "keywords": [],
+  "author": "Prashidha Bhattarai",
+  "license": "ISC",
+  "description": "implementing authentication and authorization using Node.js and MongoDB. ON doing so made effiecient use of bcrypt for password hashing, JWT for authentication, and cookies for session management. Also implemented image upload and gallery using multer and cloudinary.",
+  "dependencies": {
+    "bcryptjs": "^3.0.2",
+    "cloudinary": "^2.6.0",
+    "cookie-parser": "^1.4.7",
+    "dotenv": "^16.4.7",
+    "ejs": "^3.1.10",
+    "express": "^4.21.2",
+    "express-ejs-layouts": "^2.5.1",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.12.1",
+    "multer": "^1.4.5-lts.1"
+  }
+}
