@@ -1,6 +1,7 @@
 // DOM Elements
 const burger = document.getElementById('burger');
 const navLinks = document.getElementById('navLinks');
+const navOverlay = document.getElementById('navOverlay');
 const logoutBtn = document.getElementById('logoutBtn');
 const authLinks = document.querySelectorAll('.auth-link');
 const userLinks = document.querySelectorAll('.user-link');
@@ -48,9 +49,11 @@ async function checkAuth() {
 // Toggle navigation menu for mobile
 function toggleNav() {
     navLinks.classList.toggle('nav-active');
-    
-    // Burger Animation
     burger.classList.toggle('toggle');
+    navOverlay.classList.toggle('active');
+    
+    // Toggle body scroll
+    document.body.style.overflow = navLinks.classList.contains('nav-active') ? 'hidden' : '';
     
     // Animate Links
     const navItems = document.querySelectorAll('.nav-links li');
@@ -90,6 +93,11 @@ if (burger) {
 
 if (logoutBtn) {
     logoutBtn.addEventListener('click', logout);
+}
+
+// Close menu when clicking overlay
+if (navOverlay) {
+    navOverlay.addEventListener('click', toggleNav);
 }
 
 // API Request Helper

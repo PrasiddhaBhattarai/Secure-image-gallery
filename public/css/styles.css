@@ -150,6 +150,19 @@ header {
     transition: var(--transition);
 }
 
+/* Add burger animation styles */
+.burger.toggle .line1 {
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.burger.toggle .line2 {
+    opacity: 0;
+}
+
+.burger.toggle .line3 {
+    transform: rotate(45deg) translate(-5px, -6px);
+}
+
 /* Alert Messages */
 .alert {
     padding: 1rem;
@@ -439,35 +452,65 @@ footer {
     margin-top: auto;
 }
 
+/* Mobile Menu Overlay */
+.nav-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.nav-overlay.active {
+    display: block;
+    opacity: 1;
+}
+
 /* Responsive Styles */
 @media screen and (max-width: 768px) {
     .nav-links {
-        position: absolute;
-        right: 0;
-        height: 92vh;
-        top: 8vh;
+        position: fixed;
+        right: -50%;  /* Hide it off-screen */
+        height: 92vh; /* Reduced height to match design */
+        top: 8vh;    /* Add top spacing to align below header */
         background-color: var(--light-color);
         display: flex;
         flex-direction: column;
         align-items: center;
-        width: 50%;
-        transform: translateX(100%);
-        transition: transform 0.5s ease-in;
+        justify-content: flex-start; /* Align items to top */
+        width: 50%;  /* Half width */
+        transition: right 0.5s ease-in-out;
         z-index: 1000;
         box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
+        padding-top: 2rem;  /* Top padding for spacing */
     }
 
     .nav-links li {
         opacity: 0;
-        margin: 1.5rem 0;
+        margin: 1rem 0;
+        width: 100%;
+        text-align: center;
+    }
+
+    .nav-links a {
+        display: block;
+        padding: 0.5rem 0;
+        width: 100%;
     }
 
     .burger {
         display: block;
+        position: relative;
+        z-index: 1001;
     }
 
     .nav-active {
-        transform: translateX(0%);
+        right: 0;
     }
 
     .hero-content h1 {
