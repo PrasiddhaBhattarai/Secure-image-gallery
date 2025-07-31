@@ -32,7 +32,7 @@ A secure and scalable **authentication and image upload platform** built using *
 
 ## LINK FOR THE WEBSITE
 ```
-https://node-js-auth-eqvd.onrender.com
+https://secureimagegallery.onrender.com
 ```
 
 ---
@@ -180,6 +180,14 @@ views/
 - 🚫 Role-based access control (RBAC) to limit admin features  
 - 🧼 Input validation for registration/login/password change  
 - 🖼️ Only image files are accepted for upload
+
+---
+
+## Preview Images
+<img width="1077" height="1575" alt="image" src="https://github.com/user-attachments/assets/85b64860-c400-4b59-86e8-6f0a301aa276" />
+<img width="348" height="754" alt="image" src="https://github.com/user-attachments/assets/f12b53d2-1c33-4da0-96fb-c7faac39a2b1" />
+<img width="1899" height="864" alt="image" src="https://github.com/user-attachments/assets/81dbc50d-467d-41a2-bc4f-184bd36fb516" />
+<img width="342" height="750" alt="image" src="https://github.com/user-attachments/assets/e32a1671-0cfa-47b4-83e5-815a020ab0af" />
 
 ---
 
