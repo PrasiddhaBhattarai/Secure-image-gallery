@@ -1,4 +1,5 @@
-# 🚀 Node.js Authentication & Image Upload System
+# Secure Image Gallery
+## 🚀 Node.js Authentication & Image Upload System
 
 A secure and scalable **authentication and image upload platform** built using **Node.js**, **Express**, **MongoDB**, **JWT**, and **Cloudinary**. This full-stack project enables secure user registration and login, role-based access for admin features, password management, and image gallery functionality.
 
@@ -105,8 +106,8 @@ views/
 
 1. **Clone the repository**
    ```bash
-   git clone <your-repo-url>
-   cd 04_Nodejs_Auth
+   git clone https://github.com/PrasiddhaBhattarai/Secure-image-gallery.git
+   cd <your directory>
    ```
 
 2. **Install dependencies**
